@@ -1,0 +1,82 @@
+----------------------------------------------------------------------------------------------
+
+-4*4 grid
+-Initially two random cells are filled with 2 in it
+-four keys to move up, down, left, or right
+-cell move in that direction 
+-two identical numbers get add up 
+-rest cells goes empty again
+-After this any random empty cell gets itself filled with 2
+-make 2048 in any of the cell an win
+-there is no empty cell left to be filled with a new 2, then the game goes over.
+
+----------------------------------------------------------------------------------------------
+
+Programming Approach : 
+-We will design each logic function such as we are performing a left swipe then we will use it for right swipe by reversing game_matrixrix and performing left swipe.
+-Moving up can be done by taking transpose then moving left.
+
+-Moving down can be done by taking transpose the moving right.
+
+----------------------------------------------------------------------------------------------
+
+We have two python files, one is main.py which contains main driver code and the other is logic.py which contains all functions used. logic.py should be imported in main.py to use these functions. just place both the files in the same folder then run main.py will work perfectly.
+
+----------------------------------------------------------------------------------------------
+
+Code Explanation:
+
+1. The code starts by importing the random package into logic.py.
+2. This package provides methods for generating random numbers.
+3. Next, the start_game() function is declared.
+4. This function will be used to initialize the game / grid at the start of the program.
+5. The first thing that this function does is declare an empty list called game_matrix .
+-[]
+6. Then, it appends four lists each with four elements as 0 .
+-
+[[0],[0],[0],[0,]
+[0],[0],[0],[0,]
+[0],[0],[0],[0,]
+[0],[0],[0],[0,]]
+7. These lists represent the cells on the game / grid.
+8. The first list (game_matrix[0][0] ) represents cell 0 , and so on.
+9. Next, the for loop iterates through 4 values (i in range(4)) .
+10. For each value, it generates a new list containing 4 elements ( [0] * 4 ).
+11. These lists represent each of the 4 possible positions on the game / grid.
+12. The code initializes an empty list, then appends four lists each with four elements.
+
+
+13. Next, the code calls a function named add_new_2().
+14. The code starts by declaring two variables, row and column. These will hold the row and column numbers at which the new 2 will be inserted into the grid.
+15. This function takes one argument, game_matrix.
+16. The add_new_2() function begins by choosing two random numbers, row and column. It then uses these numbers to specify the row and column number at which the new 2 should be inserted into the grid.
+17. Finally, it returns game_matrix as its result.
+18. When you run this code on your computer, you’ll see something like this: ‘W’ or ‘w’ : Move Up S’ or ‘s’ : Move Down A’ or ‘a’ : Move Left D’ or ‘d’ : Move Right
+19. The code first randomly selects a row and column index.
+20. Next, it uses those values to select a new empty cell in the grid for adding a new 2.
+21. Finally, the add_new_2 function is called with the newly selected cell as its argument.
+
+
+22. The code then loops through each integer in the game_matrix array.
+23. It checks to see if the value stored at that location in the mat array matches 2048 (which is the winning condition in this game).
+24. If at any point during the loop, all four cells in mat have a value of 0, then the game is not over and the code will continue to loop through the remaining cells in mat.
+25. then the code checks to see if any cells have been merged.
+26. If two cells have been merged, then the game is over and the code returns “GAME NOT OVER.”
+27. Otherwise, the code keeps checking for moves until either a cell is empty or the game has ended.
+
+
+28. The code compresses the grid by copying each cell’s value to a new list.
+29. The code starts by creating an empty list, and then it loops through all of the cells in the matrix.
+30. 
+31. 
+32. 
+33. 
+34. 
+35. 
+36. 
+37. 
+38. 
+39. 
+40. 
+
+

@@ -1,0 +1,15 @@
+x = "Hello World"   # string
+x = 50  # integer
+x = 60.5    # float
+x = 2 + 3j  # complex
+x = ["geeks", "for", "geeks"]   # list
+x = ("geeks", "for", "geeks")   # tuple
+x = range(10)   # range
+x = {"name": "Suraj", "age": 24}    # dictionary
+x = {"geeks", "for", "geeks"}   # set
+x = frozenset({"geeks", "for", "geeks"}) # frozenset
+x = True    # boolean
+x = b"Geeks"    # bytes
+x = bytearray(4) # bytearray    
+x = memoryview(bytes(6)) # memoryview
+x = None    # special value
